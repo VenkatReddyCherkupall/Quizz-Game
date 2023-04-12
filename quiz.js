@@ -283,7 +283,7 @@ function next(){
 let user_answer = document.querySelector("li.option.active").innerHTML;
 
 if(user_answer == questions[question_count].answer){
-    points = points + 10;
+    points += 10;
     sessionStorage.setItem("points",points);
 }
 console.log(points);
